@@ -1,21 +1,21 @@
 class UsersController < ApplicationController
   def index
-    @users = Users.all
+    @users = User.all
   end
 
   def show
-    @user = Users.find(params[:id])
+    @user = User.find(params[:id])
   end
   def new
-    @user = Users.new
+    @user = User.new
   end
 
   def edit
-    @user = Users.find(params[:id])
+    @user = User.find(params[:id])
   end
 
   def create
-    @user = Users.new(user_params)
+    @user = User.new(user_params)
 
     if @users.save
       redirect_to  user_url
@@ -24,27 +24,27 @@ class UsersController < ApplicationController
     end
   end
 
-end
 
-def update
-  @user = User.find(params[:id])
 
-  if @user.update_attributes(user_params)
-    redirect_to user_url(@user)
-  else
-    render :edit
+  def update
+    @user = User.find(params[:id])
+
+    if @user.update_attributes(user_params)
+      redirect_to user_url(@user)
+    else
+      render :edit
+    end
   end
-end
 
-def destroy
-  @user = user.find(params[:id])
-  @user.destroy
-  redirect_to users_url
-end
+  def destroy
+    @user = user.find(params[:id])
+    @user.destroy
+    redirect_to users_url
+  end
 
-private
+  private
 
-def user_params
-  params.require(:user).permit(:name, :description, :address, :menu, :guests, :image)
-end
+  def user_params
+    params.require(:user).permit(:name, :description, :address, :menu, :guests, :image)
+  end
 end
