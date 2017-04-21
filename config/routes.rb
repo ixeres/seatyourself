@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
 
-  resources :user
+  get 'users/new'
+
+  get 'users/edit'
+
+  get 'users/update'
+
+  get 'users/delete'
+
+  resources :users
 
   resources :restaurants
 
