@@ -12,5 +12,4 @@ class Restaurant < ApplicationRecord
   def closing
     20
   end
-
-  
+end
