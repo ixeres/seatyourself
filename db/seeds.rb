@@ -35,7 +35,7 @@ image: "http://images.complex.com/complex/image/upload/c_limit,w_680/fl_lossy,pg
 
 Restaurant.create(
 name: "Donnie T's Family Funtime Fantasy Feistaurant",
-description: "Family-style mexican resteraunt and arcade. Come for the animatronics, stay because we took your passport.",
+description: "Family-style mexican restaurant and arcade. Come for the animatronics, stay because we took your passport.",
 address: "555 Tinkledown Boulevard",
 menu: "Literally cheetos in a torilla shell.",
 guests: 45,
