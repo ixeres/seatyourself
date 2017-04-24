@@ -15,7 +15,7 @@
   </div>
   <div class="field">
     <%= f.label :time %><br />
-    <%= f.select :time, @restaurant.available_times.map %>
+    <%= f.select :time, @restaurant.available_times %>
   </div>
   <div class="actions">
     <%= f.submit %>
