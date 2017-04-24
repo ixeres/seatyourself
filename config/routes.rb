@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-root to: 'home#home'
+root to: 'restaurants#index'
 
 resources :sessions, only: [:new, :create, :destroy]
 
