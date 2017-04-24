@@ -14,11 +14,12 @@ class BookingsController < ApplicationController
   def create
 
     #below 'unless' is redundant or should be rewritten maybe, given the bookings model
-    unless restaurant.guests =< 0
+    unless restaurant.guests => 0
     @booking = Booking.new(booking_params)
 
     if @booking.save
         redirect_to booking_url
+
     Restaurant.update_attribute(:numericality => -1)
 
     else
