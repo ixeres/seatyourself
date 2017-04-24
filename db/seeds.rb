@@ -12,7 +12,7 @@
 # )
 
 Restaurant.create(
-name: "Paco's Taco's",
+name: "Paco's Tacos",
 description: "Damn fine tacos",
 address: "1624 Belcher street",
 menu: "#",
@@ -41,7 +41,7 @@ image: "http://images.complex.com/complex/image/upload/c_limit,w_680/fl_lossy,pg
 
 Restaurant.create(
 name: "Donnie T's Family Funtime Fantasy Feistaurant",
-description: "Family-style mexican resteraunt and arcade. Come for the animatronics, stay because we took your passport.",
+description: "Family-style mexican restaurant and arcade. Come for the animatronics, stay because we took your passport.",
 address: "555 Tinkledown Boulevard",
 menu: "Literally cheetos in a torilla shell.",
 guests: 45,
@@ -55,4 +55,13 @@ address: "1434 Jensen Cresent",
 menu: "#",
 guests: 15,
 image: "https://media-cdn.tripadvisor.com/media/photo-o/0c/30/db/41/green-gables-bungalow.jpg"
+)
+
+User.create(
+user_id: 1,
+name: "Butt Sadman",
+email: "Butt@sad.biz",
+password: "12345",
+password_confirmation: "12345",
+id: 1
 )
