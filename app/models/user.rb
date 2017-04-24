@@ -5,4 +5,5 @@ class User < ApplicationRecord
    validates :password, confirmation: true
    validates :password_confirmation, presence: true
    has_many :bookings
+   has_many :restaurants, through: :bookings
 end
