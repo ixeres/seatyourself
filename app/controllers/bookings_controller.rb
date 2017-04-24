@@ -6,6 +6,7 @@ class BookingsController < ApplicationController
 
       if @booking.save
         redirect_to @booking.user, :notice => 'booking made'
+        @restaurant.minus_guests
       else
         render 'restaurants/show'
       end

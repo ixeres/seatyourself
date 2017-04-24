@@ -48,4 +48,13 @@ end
   def restaurant_params
     params.require(:restaurant).permit(:name, :description, :address, :menu, :guests, :image)
   end
+  def reset_guests
+
+  end
+  def minus_guests(available_times)
+    @times.each do |k, v| v - 1
+    end
+  end
+
+
 end
