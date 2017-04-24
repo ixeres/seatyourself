@@ -52,10 +52,8 @@ image: "https://media-cdn.tripadvisor.com/media/photo-o/0c/30/db/41/green-gables
 )
 
 User.create(
-user_id: 1,
 name: "Butt Sadman",
 email: "Butt@sad.biz",
 password: "12345",
-password_confirmation: "12345",
-id: 1
+password_confirmation: "12345"
 )
