@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Restaurant.create(
-name: "Paco's Taco's",
+name: "Paco's Tacos",
 description: "Damn fine tacos",
 address: "1624 Belcher street",
 menu: "#",
