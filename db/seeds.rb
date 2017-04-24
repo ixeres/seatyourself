@@ -5,6 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+# User.create(
+# name: "Batman",
+# email: "batman_69@aol.com",
+# password: "abcde123"
+# )
 
 Restaurant.create(
 name: "Paco's Taco's",
@@ -15,13 +20,6 @@ guests: 25,
 image: "http://c7.nrostatic.com/sites/default/files/uploaded/college-bans-mexican-sombreros-r.jpg"
 )
 
-Restaurant.create(
-name: "Khlav Khalash"
-description: "Mountain Dew or Crab Juice"
-menu: "See above"
-guests: 1
-image: "https://www.google.ca/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjqopOz373TAhUM04MKHT6TCnAQjRwIBw&url=https%3A%2F%2Fwww.reddit.com%2Fr%2FTheSimpsons%2Fcomments%2F3kmehw%2Fis_khlav_kalash_a_real_food%2F&psig=AFQjCNFkTI4nWopxifBB8A4GxDsKjAvXsA&ust=1493145714819067"
-)
 
 Restaurant.create(
 name: "Burger Slut",

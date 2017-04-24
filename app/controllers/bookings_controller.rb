@@ -6,7 +6,7 @@ class BookingsController < ApplicationController
 
       if @booking.save
         redirect_to @booking.user, :notice => 'booking made'
-        @restaurant.minus_guests
+        # @restaurant.minus_guests
       else
         render 'restaurants/show'
       end
@@ -17,12 +17,12 @@ class BookingsController < ApplicationController
     end
 
     def show
-      @booking = Bookings.show([params[:id]])
+      @booking = Bookings.find(:id)
     end
 
 
 
-    private
+
     def booking_params
       params.require(:booking).permit(:time, :name, :guests)
     end
