@@ -1,13 +1,19 @@
 class BookingsController < ApplicationController
-  def index
-  end
+  def create
+      @restaurant = Restaurant.find(params[:restaurant_id])
+      @booking = @restaurant.bookings.build(booking_params)
+      @booking.user = current_user
 
-  def show
-  end
+      if @booking.save
+        redirect_to @booking.user, :notice => 'booking made'
+      else
+        render 'restaurants/show'
+      end
+    end
 
-  def new
-  end
-
-  def edit
+    private
+    def booking_params
+      params.require(:booking).permit(:time, :name, :people)
+    end
   end
 end
