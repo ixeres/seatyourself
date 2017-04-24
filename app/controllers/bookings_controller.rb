@@ -11,9 +11,14 @@ class BookingsController < ApplicationController
       end
     end
 
+    def new
+      @booking = Booking.new
+    end
+
+    
+
     private
     def booking_params
       params.require(:booking).permit(:time, :name, :people)
     end
-  end
 end

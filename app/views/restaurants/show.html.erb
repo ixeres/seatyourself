@@ -5,3 +5,20 @@
 <p><%= @restaurant.address %></p>
 <p><%= @restaurant.description %></p>
 <p><%= @restaurant.menu %></p>
+<% if current_user %>
+  <h4>Make a booking at <%= @restaurant.name %></h4>
+  <%= form_for [@restaurant, @booking] do |f| %>
+
+  <div class="field">
+    <%= f.label :guests %><br />
+    <%= f.number_field :guests %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br />
+    <%= f.select :time, [['11AM','11AM'],['12PM','12PM'],['1PM','1PM'],['2PM','2PM'], ['3PM','3PM'],['4PM','4PM'],['5PM','5PM'],['6PM','6PM'],['7PM','7PM'],['8PM','8PM']]%>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+  <% end %>
+<% end %>
