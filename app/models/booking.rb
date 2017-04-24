@@ -1,7 +1,7 @@
 class Booking < ApplicationRecord
   validates :people, :numericality => { :only_integer => true, :greater_than => 0, :less_than => 100 }
   validate :restaurant_must_be_within_capacity
-  belongs_to :restaurant
+  has_and_belongs_to_many :restaurants
   belongs_to :user
 
   def restaurant_must_be_within_capacity
