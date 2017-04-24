@@ -15,6 +15,10 @@ class BookingsController < ApplicationController
       @booking = Booking.new
     end
 
+    def show
+      @booking = Bookings.show([params[:id]])
+    end
+
 
 
     private
