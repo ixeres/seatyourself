@@ -15,10 +15,10 @@ class BookingsController < ApplicationController
       @booking = Booking.new
     end
 
-    
+
 
     private
     def booking_params
-      params.require(:booking).permit(:time, :name, :people)
+      params.require(:booking).permit(:time, :name, :guests)
     end
 end

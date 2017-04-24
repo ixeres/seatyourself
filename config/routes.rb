@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 
+root to: 'home#home'
+
 resources :sessions, only: [:new, :create, :destroy]
 
-resources :users, only: [:new, :create]
+resources :users, only: [:new, :create, :show]
 
 resources :restaurants do
   resources :bookings, only: :create

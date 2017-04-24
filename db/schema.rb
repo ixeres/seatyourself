@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170424141910) do
+ActiveRecord::Schema.define(version: 20170424152341) do
 
   create_table "bookings", force: :cascade do |t|
     t.integer  "guests"
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 20170424141910) do
     t.string   "password_digest"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.integer  "user_id"
   end
 
 end
