@@ -27,6 +27,10 @@ Restaurant.create(
  menu: "#",
  guests: 50,
  image: "http://www.imagesource.com/Doc/IS0/Media/TR3_WATERMARKED/c/6/e/4/IS098QZ5O.jpg"
+<<<<<<< HEAD
+ )
+=======
+>>>>>>> 917dcbb8545c6116b831f518fd6e0ac8388efa99
 
 Restaurant.create(
 name: "Sobchak's Deli",
