@@ -23,7 +23,7 @@ img {
   max-height: 300px;
 }
 
-a ~ p
+/*a ~ p
 {
   background-color: salmon;
   padding: 0px;
@@ -39,4 +39,4 @@ a ~ p
 
 li {
   display: inline-block;
-}
+}*/

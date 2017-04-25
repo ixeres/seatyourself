@@ -6,9 +6,9 @@ class BookingsController < ApplicationController
   # def subtract_guests
   #     @restaurants.guests.each do |k, v| v - 1
   #     end
-  end
+
       if @booking.save
-        redirect_to @booking.user, :notice => 'booking made'
+        redirect_to @booking.user, :notice => 'Booking Made'
 
       else
         render 'restaurants/show'
