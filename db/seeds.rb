@@ -11,24 +11,33 @@
 # password: "abcde123"
 # )
 
+# Restaurant.create(
+# name: "Paco's Tacos",
+# description: "Damn fine tacos",
+# address: "1624 Belcher street",
+# menu: "#",
+# guests: 25,
+# image: "http://c7.nrostatic.com/sites/default/files/uploaded/college-bans-mexican-sombreros-r.jpg"
+# )
+
+#
+# Restaurant.create(
+# name: "Burger Slut",
+# description: "What would YOU do for a cheeseburger?",
+# address: "42 Mountaindew Avenue",
+# menu: "#",
+# guests: 50,
+# image: "http://www.imagesource.com/Doc/IS0/Media/TR3_WATERMARKED/c/6/e/4/IS098QZ5O.jpg"
+# )
 Restaurant.create(
-name: "Paco's Tacos",
-description: "Damn fine tacos",
-address: "1624 Belcher street",
+name: "Can Haz Cheezburger",
+description: "You can haz one",
+address: "internet",
 menu: "#",
-guests: 25,
-image: "http://c7.nrostatic.com/sites/default/files/uploaded/college-bans-mexican-sombreros-r.jpg"
+guests: 15,
+image: "http://i1.kym-cdn.com/photos/images/facebook/000/100/128/happycat.gif"
 )
 
-
-Restaurant.create(
-name: "Burger Slut",
-description: "What would YOU do for a cheeseburger?",
-address: "42 Mountaindew Avenue",
-menu: "#",
-guests: 50,
-image: "http://www.imagesource.com/Doc/IS0/Media/TR3_WATERMARKED/c/6/e/4/IS098QZ5O.jpg"
-)
 
 Restaurant.create(
 name: "Sobchak's Deli",
@@ -64,4 +73,13 @@ email: "Butt@sad.biz",
 password: "12345",
 password_confirmation: "12345",
 id: 1
+)
+
+User.create(
+user_id: 2,
+name: "Jesus Christ",
+email: "godsson@immaculateconception.gov",
+password: "12345",
+password_confirmation: "12345",
+id: 2
 )

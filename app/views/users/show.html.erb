@@ -3,8 +3,7 @@
 <ul>
   <% @user.bookings.each do |booking| %>
     <li>
-      <%= link_to booking.restaurants.name %>
-      at
+      <%=link_to booking.restaurant.name %>
     </li>
   <% end %>
 </ul>
