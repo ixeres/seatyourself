@@ -3,10 +3,13 @@ class BookingsController < ApplicationController
       @restaurant = Restaurant.find(params[:restaurant_id])
       @booking = @restaurant.bookings.build(booking_params)
       @booking.user = current_user
-
+  # def subtract_guests
+  #     @restaurants.guests.each do |k, v| v - 1
+  #     end
+  end
       if @booking.save
         redirect_to @booking.user, :notice => 'booking made'
-        # @restaurant.minus_guests
+
       else
         render 'restaurants/show'
       end

@@ -11,24 +11,24 @@
 # password: "abcde123"
 # )
 
-Restaurant.create(
-name: "Paco's Tacos",
-description: "Damn fine tacos",
-address: "1624 Belcher street",
-menu: "#",
-guests: 25,
-image: "http://c7.nrostatic.com/sites/default/files/uploaded/college-bans-mexican-sombreros-r.jpg"
-)
+# Restaurant.create(
+# name: "Paco's Tacos",
+# description: "Damn fine tacos",
+# address: "1624 Belcher street",
+# menu: "#",
+# guests: 25,
+# image: "http://c7.nrostatic.com/sites/default/files/uploaded/college-bans-mexican-sombreros-r.jpg"
+# )
 
-
-Restaurant.create(
-name: "Burger Slut",
-description: "What would YOU do for a cheeseburger?",
-address: "42 Mountaindew Avenue",
-menu: "#",
-guests: 50,
-image: "http://www.imagesource.com/Doc/IS0/Media/TR3_WATERMARKED/c/6/e/4/IS098QZ5O.jpg"
-)
+#
+# Restaurant.create(
+# name: "Burger Slut",
+# description: "What would YOU do for a cheeseburger?",
+# address: "42 Mountaindew Avenue",
+# menu: "#",
+# guests: 50,
+# image: "http://www.imagesource.com/Doc/IS0/Media/TR3_WATERMARKED/c/6/e/4/IS098QZ5O.jpg"
+# )
 
 Restaurant.create(
 name: "Sobchak's Deli",
