@@ -13,3 +13,61 @@
  *= require_tree .
  *= require_self
  */
+
+ // Place all the styles related to the users controller here.
+ // They will automatically be included in application.css.
+ // You can use Sass (SCSS) here: http://sass-lang.com/
+
+ h1 {
+   text-transform: uppercase;
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   color: #4fb0ae;
+ }
+
+ h2{
+   text-decoration: none;
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+ }
+.field {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+li {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+}
+p {
+ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+ font-weight: 600;
+}
+a:link {
+  text-decoration: none;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #ff0200;
+}
+
+a:visited {
+   text-decoration: none;
+   color: #ff0200;
+}
+
+a:hover {
+   text-decoration: underline;
+  color: #ff0200;
+}
+
+a:active {
+   text-decoration: underline;
+}
+
+
+f.submit {
+  font-color: RED
+}
+
+.custom_button  {
+  font-color: RED
+}
