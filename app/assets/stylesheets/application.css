@@ -47,10 +47,10 @@ img {
 
 a ~ p
 {
-  background-color: salmon;
+  /*background-color: salmon;*/
   padding: 0;
-  border: solid black 5px;
-  color: white;
+  /*border: solid black 5px;*/
+  color: black;
 }
 
 #content:nth-child(3)child {
@@ -67,6 +67,52 @@ li {
   background-color: #990000;
   display: block;
   margin: 0;
+  background-image: url(https://savvytokyo.com/wp-content/uploads/2015/10/Wine-Glass-Ribeye-cropped.jpg);
+  /*opacity: 0.5;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  background-blend-mode: soft-light;
+  overflow: auto;
+  width: 100%;
+  position: relative;
+}
+
+nav {
+  /*text-align: right;*/
+  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+  margin-left: 20px;
+}
+
+ul {
+  text-align: right;
+  margin-right: 75px;
+  display: block;
+  font-size: 25px;
+}
+
+#login {
+  margin-top: 282px;
+  max-width: 50%;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  display: inline-block;
+}
+
+#login p {
+  text-decoration: none;
+  color: gold;
+  text-align: right;
+  margin: 10px;
+}
+
+ul a {
+  text-decoration: none;
+  color: gold;
+
 }
 
 h1 {
@@ -78,6 +124,8 @@ h1 {
   padding-top: 20px;
   padding-left: 20px;
   padding-bottom: 200px;
+  display: inline-block;
+  float: left;
 }
 
 .title a {
@@ -86,4 +134,8 @@ h1 {
   color: gold;
   text-decoration: none;
 
+}
+
+#content {
+  display: inline-grid;
 }
